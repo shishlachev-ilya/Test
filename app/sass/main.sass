@@ -1,0 +1,156 @@
+@import '_popup'
+@import '_vars'
+@import '_grid'
+
+body
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px
+	color: #4e525d
+	line-height: 1.5
+
+p, h1
+	padding: 0
+	margin: 0
+
+.header
+	background: $white
+	height: 100px
+	margin-bottom: -2px
+	&__logo
+		a
+			color: $main
+			font-family: 'Lobster', cursive
+			font-size: 3rem
+			line-height: 100px
+	.nav
+		&__list
+			margin: 0
+			padding-left: 0
+			list-style-type: none
+			&-item
+				display: inline-block
+				margin-left: -4px
+				a
+					display: block
+					text-decoration: none
+					font-size: 1.07rem
+					color: #4e525d
+					padding-left: 21px
+					padding-right: 21px
+					line-height: 100px
+					height: 100px
+					border-bottom: 3px solid $white
+					box-sizing: border-box
+					&:hover
+						background: #f8f9fb
+						color: $main
+						border-color: $main
+
+.banner
+	&__wrap
+		&-item
+			background: url(../img/banner.jpg) no-repeat center
+			height: 570px 
+			position: relative
+			text-align: center
+			outline: none
+			.slider__body
+				position: absolute
+				top: 45%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 100%
+				&-head
+					font-weight: 600
+					font-size: 1.9rem
+					color: $white
+				&-text
+					color: $white
+					font-size: 1.1rem
+					padding-top: 35px
+					padding-bottom: 65px
+				&-link
+					a
+						display: inline-block
+						font-size: 1.1rem
+						color: $white
+						font-weight: 600
+						text-decoration: none
+						padding: 18px 45px
+						border: 2px solid $white
+						border-radius: 5px
+						outline: none
+						letter-spacing: 1px
+.slick-prev, .slick-next
+	z-index: 10
+	height: 50px
+	width: 50px
+	background: $white !important
+	border-radius: 50%
+	&:before
+		font-family: "FontAwesome"
+		color: $main
+		font-size: 35px
+	&:hover
+		background: $white
+
+.slick-prev
+	left: 30px
+	&:before
+		content: '\f104'
+	
+
+.slick-next
+	right: 30px
+	&:before
+		content: '\f105'
+
+.team
+	background: $white
+	padding: 110px 0
+	&__header
+		text-align: center
+		padding-bottom: 130px
+		h2
+			font-weight: 600
+			font-size: 2.5rem
+			color: $text
+	&__wrap
+		text-align: center
+		&-logo
+			a
+				display: inline-block
+				position: relative
+				.inner
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					font-size: 3rem
+					color: #f46d6d
+					transition: opacity 0.5s
+					opacity: 0
+			&:hover .inner
+				opacity: 1
+		&-name
+			padding-top: 70px
+			p
+				color: $text
+				font-size: 1.2rem
+				font-weight: 600
+		&-desc
+			padding: 0 10px
+			p
+				padding-top: 35px
+		
+	
+
+					
+				
+
+
+	
+
+
+	
+
