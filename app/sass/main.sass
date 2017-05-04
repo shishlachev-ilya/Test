@@ -8,9 +8,15 @@ body
 	color: #4e525d
 	line-height: 1.5
 
-p, h1
+p, h1, h2, h3
 	padding: 0
 	margin: 0
+
+.scroll-fix
+	position: fixed
+	width: 100%
+	top: 0
+	z-index: 999
 
 .header
 	background: $white
@@ -22,7 +28,9 @@ p, h1
 			font-family: 'Lobster', cursive
 			font-size: 3rem
 			line-height: 100px
+			text-decoration: none
 	.nav
+		text-align: right
 		&__list
 			margin: 0
 			padding-left: 0
@@ -38,8 +46,8 @@ p, h1
 					padding-left: 21px
 					padding-right: 21px
 					line-height: 100px
+					border-bottom: 3px solid transparent
 					height: 100px
-					border-bottom: 3px solid $white
 					box-sizing: border-box
 					&:hover
 						background: #f8f9fb
@@ -48,11 +56,13 @@ p, h1
 
 .banner
 	&__wrap
+		width: 100vw
 		&-item
 			background: url(../img/banner.jpg) no-repeat center
-			height: 570px 
+			min-height: 570px 
 			position: relative
 			text-align: center
+			// margin-top: -1px
 			outline: none
 			.slider__body
 				position: absolute
@@ -77,10 +87,14 @@ p, h1
 						font-weight: 600
 						text-decoration: none
 						padding: 18px 45px
-						border: 2px solid $white
+						border: 3px solid $white
 						border-radius: 5px
 						outline: none
 						letter-spacing: 1px
+
+.slick-list
+	width: 100vw
+
 .slick-prev, .slick-next
 	z-index: 10
 	height: 50px
@@ -112,7 +126,7 @@ p, h1
 		text-align: center
 		padding-bottom: 130px
 		h2
-			font-weight: 600
+			font-weight: 400
 			font-size: 2.5rem
 			color: $text
 	&__wrap
@@ -128,7 +142,7 @@ p, h1
 					transform: translate(-50%, -50%)
 					font-size: 3rem
 					color: #f46d6d
-					transition: opacity 0.5s
+					transition: opacity 0.2s
 					opacity: 0
 			&:hover .inner
 				opacity: 1
@@ -142,7 +156,145 @@ p, h1
 			padding: 0 10px
 			p
 				padding-top: 35px
-		
+
+.plans
+	padding: 115px 0 100px 0
+	background: #f1f1f1
+	&__wrap
+		text-align: center
+		padding: 0 5px
+		&-head
+			background: #485460
+			padding: 26px 0
+			h3
+				color: $white
+				font-size: 1.8rem
+		&-price
+			background: #f8f9fb
+			p
+				color: #485460
+				font-size: 1.4rem
+				padding: 25px 0
+		&-body
+			background: $white
+			p
+				border-bottom: 1px solid #ecf0f1
+				color: #8c9299
+				padding: 18px 0
+		&-footer
+			padding: 30px 0
+			background: #f8f9fb
+			a
+				display: inline-block
+				padding: 13px 50px
+				font-size: 1.2rem
+				font-weight: 600
+				color: $white
+				background: #788492
+				text-decoration: none
+				border-radius: 5px
+	.hover-active
+		background: $main
+
+.contact
+	background: url(../img/contact-bg.jpg) no-repeat
+	background-size: cover
+	padding: 100px 0
+	&__header
+		text-align: center
+		padding-bottom: 115px
+		h2
+			font-weight: 400
+			font-size: 2.5rem
+			color: $white
+	&__social
+		&-head
+			padding-bottom: 40px
+			p
+				font-size: 1.7rem
+				color: $white
+				padding-bottom: 15px
+			span
+				color: $white
+				opacity: 0.5
+		&-icon
+			.icon
+				display: inline-block
+				height: 42px
+				width: 42px
+				border-radius: 50%
+				background: red
+				position: relative
+				& + a
+					margin-left: 15px
+				img
+					position: absolute
+					height: 18px
+					width: 18px
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			.facebook
+				background-color: #3b5997
+			.twitter
+				background-color: #3ec2f3
+			.google
+				background-color: #e44c41
+		&-adress
+			padding-top: 20px
+			p
+				color: #bface2
+				padding-bottom: 11px
+				a
+					display: inline-block
+					color: #bface2
+					text-decoration: none
+				a[href^="tel"]
+					text-transform: uppercase
+				a[href^="mail"]
+					white-space: nowrap
+	&__form
+		text-align: right
+		input
+			display: inline-block
+			width: 46%
+			height: 44px
+			padding-left: 20px
+			box-sizing: border-box	
+			border: none
+			outline: none
+			border-radius: 5px
+			color: $text
+			& + input
+				margin-left: 5%
+		textarea
+			display: inline-block
+			margin: 30px 0
+			border-radius: 5px
+			padding-top: 20px
+			padding-left: 20px
+			box-sizing: border-box
+			width: 97.5%
+			height: 180px 	
+			border: none
+			outline: none
+			resize: none	
+			color: $text
+		button
+			display: inline-block
+			background-color: $main
+			color: $white
+			font-size: 1.5rem
+			padding: 15px 55px
+			border-radius: 5px
+			cursor: pointer
+			border: none
+			outline: none
+
+
+					
+				
+
 	
 
 					

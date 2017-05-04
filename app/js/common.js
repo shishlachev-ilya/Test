@@ -31,5 +31,37 @@ $(document).ready(function() {
 	});
 	/* slick */
 
+	/* hover */
+	$('.plans__wrap-footer a').hover(
+		function(){
+			$(this).addClass('hover-active');
+			$(this).parent().parent().find('.plans__wrap-head').addClass('hover-active');
+		},
+		function(){
+			$(this).removeClass('hover-active');
+			$(this).parent().parent().find('.plans__wrap-head').removeClass('hover-active');
+		});
+	/* hover */
+
+	/* link */
+	$('.nav__list a').on('click', function (event) {
+
+		event.preventDefault();
+				var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+	});
+	/* link */
+
+	/* scroll-fix */
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 0){
+			$('.header').addClass('scroll-fix');
+		}else{
+			$('.header').removeClass('scroll-fix');
+		}
+	});
+	/* scroll-fix */
+
 	
 });
