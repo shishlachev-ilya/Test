@@ -1,14 +1,16 @@
-var 	gulp        = require('gulp'),
-		sass 		= require('gulp-sass'),
-		browserSync = require('browser-sync'),
-		concat      = require('gulp-concat'), 
-		uglify      = require('gulp-uglifyjs'),
-		cssnano     = require('gulp-cssnano'), 
-		rename      = require('gulp-rename'); 
+var gulp        	= require('gulp'),
+		sass 					= require('gulp-sass'),
+		browserSync 	= require('browser-sync'),
+		concat      	= require('gulp-concat'), 
+		uglify      	= require('gulp-uglifyjs'),
+		cssnano     	= require('gulp-cssnano'), 
+		autoprefixer 	= require('gulp-autoprefixer'),
+		rename      	= require('gulp-rename'); 
 
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 			.pipe(sass())
+			.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 			.pipe(gulp.dest('app/css'))	
 			.pipe(browserSync.reload({stream: true}))
 });
