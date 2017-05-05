@@ -1,0 +1,201 @@
+
+@import '_vars'
+@media (max-width: 880px)
+
+	.mobile-menu, .mobile
+		display: none
+
+	.col-m-1
+		width: 100%
+
+	.col-m-1-2
+		width: 50%
+
+	.banner__wrap-item 
+		.slider__body-head
+			font-size: 1.5rem
+
+	.header 
+		&__logo
+			a
+				font-size: 2.5rem
+		.nav__list-item 
+			a
+				padding-left: 12px
+				padding-right: 12px
+		
+	.team
+		padding: 80px 0
+		&__header
+			padding-bottom: 60px
+		.team__wrap
+			margin-bottom: 50px
+			&-name
+				padding-top: 25px
+
+	.plans
+		padding: 80px 0
+		&__wrap
+			width: 65%
+			margin: 0 auto 40px auto
+
+	.contact
+		padding: 80px 0 
+		text-align: center
+		&__header
+			padding-bottom: 50px
+		&__form
+			padding-top: 25px
+			text-align: center
+
+
+
+@media (max-width: 768px)	
+	
+	.header
+		.nav__list
+			display: none
+		.mobile-menu
+			display: block
+			text-align: right
+			height: 100px
+			line-height: 100px
+			.mobile-link
+				display: inline-block
+				width: 38px
+				height: 25px
+				background: #fff
+				vertical-align: middle
+				position: relative
+				border: none
+				outline: none
+				cursor: pointer
+				span
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					height: 3px
+					width: 30px
+					background: $main
+					border: none
+					outline: none
+					&:before
+						content: ''
+						position: absolute
+						height: 3px
+						width: 30px
+						margin-top: -6px
+						transform: translate(-50%, -50%)
+						background: $main
+						transition: all 0.25s
+					&:after
+						content: ''
+						position: absolute
+						transform: translate(-50%, -50%)
+						height: 3px
+						width: 30px
+						margin-top: 10px
+						transition: all 0.25s
+						background: $main
+				.mobile-active-link
+					background: transparent
+					&:before
+						transform: rotate(135deg)
+						margin-top: -1px
+						transition: all 0.25s
+						left: 0
+					&:after
+						transform: rotate(-135deg)
+						margin-top: -1px
+						transition: all 0.25s
+						left: 0
+		
+		.mobile
+			display: none
+			text-align: right
+			position: relative
+			z-index: 999
+			&__list
+				margin: 0
+				padding: 10px
+				list-style-type: none
+				&-item
+					a
+						display: inline-block
+						padding: 5px 10px
+						text-decoration: none
+						color: $text
+						font-size: 1.1rem
+						&:hover
+							color: $main
+							background: $text
+
+	.banner
+		&__wrap-item 
+			.slider__body-head
+				h1
+					font-size: 2.5rem
+			.slider__body-text
+				padding-bottom: 35px
+			.slider__body-link
+				a
+					padding: 12px 25px
+					font-size: 1rem
+
+
+	.slick-next, .slick-prev
+		height: 30px
+		width: 30px
+
+	.slick-next
+		right: 35px
+		&:before
+			font-size: 20px
+	.slick-prev
+		left: 20px
+		&:before
+			font-size: 20px
+
+	.plans
+		&__wrap
+			width: 65%
+			margin: 0 auto 40px auto
+
+	.contact
+		padding: 80px 0 
+		text-align: center
+		&__header
+			padding-bottom: 50px
+		&__form
+			padding-top: 25px
+			text-align: center
+
+@media (max-width: 480px)
+
+	.col-s-1
+		width: 100%
+
+	.banner__wrap-item 
+		.slider__body-head h1
+			font-size: 1.6rem
+		.slider__body-text
+			padding: 20px 0
+			p
+				font-size: 0.9rem
+		.slider__body-link
+			a
+				padding: 9px 15px
+
+	.plans
+		&__wrap
+			margin: 0 auto 40px
+			width: 90%
+
+
+
+	
+
+	
+		
+		

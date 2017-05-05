@@ -1,0 +1,156 @@
+@media (max-width: 880px) {
+  .mobile-menu, .mobile {
+    display: none; }
+  .col-m-1 {
+    width: 100%; }
+  .col-m-1-2 {
+    width: 50%; }
+  .banner__wrap-item .slider__body-head {
+    font-size: 1.5rem; }
+  .header__logo a {
+    font-size: 2.5rem; }
+  .header .nav__list-item a {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .team {
+    padding: 80px 0; }
+    .team__header {
+      padding-bottom: 60px; }
+    .team .team__wrap {
+      margin-bottom: 50px; }
+      .team .team__wrap-name {
+        padding-top: 25px; }
+  .plans {
+    padding: 80px 0; }
+    .plans__wrap {
+      width: 65%;
+      margin: 0 auto 40px auto; }
+  .contact {
+    padding: 80px 0;
+    text-align: center; }
+    .contact__header {
+      padding-bottom: 50px; }
+    .contact__form {
+      padding-top: 25px;
+      text-align: center; } }
+
+@media (max-width: 768px) {
+  .header .nav__list {
+    display: none; }
+  .header .mobile-menu {
+    display: block;
+    text-align: right;
+    height: 100px;
+    line-height: 100px; }
+    .header .mobile-menu .mobile-link {
+      display: inline-block;
+      width: 38px;
+      height: 25px;
+      background: #fff;
+      vertical-align: middle;
+      position: relative;
+      border: none;
+      outline: none;
+      cursor: pointer; }
+      .header .mobile-menu .mobile-link span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        width: 30px;
+        background: #49cbcd;
+        border: none;
+        outline: none; }
+        .header .mobile-menu .mobile-link span:before {
+          content: '';
+          position: absolute;
+          height: 3px;
+          width: 30px;
+          margin-top: -6px;
+          transform: translate(-50%, -50%);
+          background: #49cbcd;
+          transition: all 0.25s; }
+        .header .mobile-menu .mobile-link span:after {
+          content: '';
+          position: absolute;
+          transform: translate(-50%, -50%);
+          height: 3px;
+          width: 30px;
+          margin-top: 10px;
+          transition: all 0.25s;
+          background: #49cbcd; }
+      .header .mobile-menu .mobile-link .mobile-active-link {
+        background: transparent; }
+        .header .mobile-menu .mobile-link .mobile-active-link:before {
+          transform: rotate(135deg);
+          margin-top: -1px;
+          transition: all 0.25s;
+          left: 0; }
+        .header .mobile-menu .mobile-link .mobile-active-link:after {
+          transform: rotate(-135deg);
+          margin-top: -1px;
+          transition: all 0.25s;
+          left: 0; }
+  .header .mobile {
+    display: none;
+    text-align: right;
+    position: relative;
+    z-index: 999; }
+    .header .mobile__list {
+      margin: 0;
+      padding: 10px;
+      list-style-type: none; }
+      .header .mobile__list-item a {
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #4e525d;
+        font-size: 1.1rem; }
+        .header .mobile__list-item a:hover {
+          color: #49cbcd;
+          background: #4e525d; }
+  .banner__wrap-item .slider__body-head h1 {
+    font-size: 2.5rem; }
+  .banner__wrap-item .slider__body-text {
+    padding-bottom: 35px; }
+  .banner__wrap-item .slider__body-link a {
+    padding: 12px 25px;
+    font-size: 1rem; }
+  .slick-next, .slick-prev {
+    height: 30px;
+    width: 30px; }
+  .slick-next {
+    right: 35px; }
+    .slick-next:before {
+      font-size: 20px; }
+  .slick-prev {
+    left: 20px; }
+    .slick-prev:before {
+      font-size: 20px; }
+  .plans__wrap {
+    width: 65%;
+    margin: 0 auto 40px auto; }
+  .contact {
+    padding: 80px 0;
+    text-align: center; }
+    .contact__header {
+      padding-bottom: 50px; }
+    .contact__form {
+      padding-top: 25px;
+      text-align: center; } }
+
+@media (max-width: 480px) {
+  .col-s-1 {
+    width: 100%; }
+  .banner__wrap-item .slider__body-head h1 {
+    font-size: 1.6rem; }
+  .banner__wrap-item .slider__body-text {
+    padding: 20px 0; }
+    .banner__wrap-item .slider__body-text p {
+      font-size: 0.9rem; }
+  .banner__wrap-item .slider__body-link a {
+    padding: 9px 15px; }
+  .plans__wrap {
+    margin: 0 auto 40px;
+    width: 90%; } }
